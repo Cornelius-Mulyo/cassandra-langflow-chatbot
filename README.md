@@ -117,8 +117,8 @@ WHERE id = 'STU00003';
 ### Cassandra Queries
 
 The screenshot below shows example Cassandra queries including selecting records, updating values, filtering results, and deleting records.
+<img width="1920" height="997" alt="Demo1" src="https://github.com/user-attachments/assets/2e50f68a-c733-47fa-a0f5-099343b82f6a" />
 
-![Cassandra Queries](screenshots/Demo1.png)
 
 ---
 
@@ -126,7 +126,7 @@ The screenshot below shows example Cassandra queries including selecting records
 
 This screenshot demonstrates the Cassandra table structure and query outputs after performing CRUD operations.
 
-![Query Results](screenshots/Demo2.png)
+<img width="1920" height="896" alt="Demo2" src="https://github.com/user-attachments/assets/1f9c7f99-a78e-4d7a-a392-1daf3186edc7" />
 
 ---
 
@@ -138,4 +138,5 @@ This screenshot demonstrates the Cassandra table structure and query outputs aft
 - Performing **CRUD operations**
 - Connecting Cassandra with **Python**
 - Preparing data for integration with **AI tools like Langflow**
+
 
