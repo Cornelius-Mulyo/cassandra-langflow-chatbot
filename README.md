@@ -33,6 +33,8 @@ cassandra-langflow-chatbot/
 ├── context_file.md
 ├── README.md
 └── screenshots/
+    ├── Demo1.png
+    └── Demo2.png
 ```
 
 ---
@@ -136,5 +138,3 @@ This screenshot demonstrates the Cassandra table structure and query outputs aft
 - Performing **CRUD operations**
 - Connecting Cassandra with **Python**
 - Preparing data for integration with **AI tools like Langflow**
-
-
