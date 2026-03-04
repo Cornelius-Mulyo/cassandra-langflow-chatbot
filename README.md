@@ -138,3 +138,4 @@ This screenshot demonstrates the Cassandra table structure and query outputs aft
 - Performing **CRUD operations**
 - Connecting Cassandra with **Python**
 - Preparing data for integration with **AI tools like Langflow**
+
