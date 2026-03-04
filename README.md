@@ -6,21 +6,19 @@
 
 ## Overview
 
-This project demonstrates how to set up **Apache Cassandra using Docker**, create a `students` table, insert sample data, and run NoSQL queries using both **CQL** and **Python**.
+This project demonstrates how to set up **Apache Cassandra using Docker**, create a `students` table, insert sample data, and run NoSQL queries using **CQL** and **Python**.
 
-The project also includes a simple **Langflow chatbot context file**, showing how Cassandra data could be integrated into AI-powered workflows.
-
-This project demonstrates basic **NoSQL database operations**, containerization with Docker, and backend interaction using Python.
+The project also demonstrates basic **CRUD operations (Create, Read, Update, Delete)** using Cassandra and shows how the database can be integrated with backend tools such as **Python and Langflow**.
 
 ---
 
 ## Technologies Used
 
-- Apache Cassandra
-- Docker
-- Python
-- Langflow
-- NoSQL Databases
+- Apache Cassandra  
+- Docker  
+- Python  
+- Langflow  
+- NoSQL Databases  
 
 ---
 
@@ -67,65 +65,45 @@ Inside `cqlsh` run:
 SOURCE 'schema.cql';
 ```
 
-This will:
+This will create:
 
-- Create the `studentdb` keyspace  
-- Create the `students` table  
-- Insert sample student records  
+- the `studentdb` keyspace  
+- the `students` table  
+- sample student records  
 
 ---
 
 ### 3. Run the Python Query Script
 
-Install the Cassandra driver:
+Install the Cassandra Python driver:
 
 ```bash
 pip install cassandra-driver
 ```
 
-Then run:
+Run the query script:
 
 ```bash
 python query_test.py
 ```
 
-The script connects to the Cassandra database and retrieves student records.
-
 ---
 
 ## Example Queries
 
-### View All Students
-
 ```sql
 SELECT * FROM students;
-```
 
-### Query a Specific Student
-
-```sql
 SELECT * FROM students WHERE id = 'STU00001';
-```
 
-### Update a Student's GPA
-
-```sql
 UPDATE students
 SET gpa = 3.95
 WHERE id = 'STU00002';
-```
 
-### Filter by Major
-
-```sql
 SELECT * FROM students
 WHERE major = 'Computer Science'
 ALLOW FILTERING;
-```
 
-### Delete a Student
-
-```sql
 DELETE FROM students
 WHERE id = 'STU00003';
 ```
@@ -134,60 +112,27 @@ WHERE id = 'STU00003';
 
 ## Demo Screenshots
 
-### Query Results
+### Cassandra Table Queries
 
-Shows all student records stored in the Cassandra table.
+The screenshot below shows example Cassandra queries including selecting records, updating values, filtering results, and deleting records.
 
-![Query Results](screenshots/select-results.png)
-
----
-
-### Table Structure
-
-Shows the Cassandra schema definition for the `students` table.
-
-![Table Structure](screenshots/table-structure.png)
+![Cassandra Queries](screenshots/demo1.png)
 
 ---
 
-### Update Query
+### Query Results and Table Structure
 
-Demonstrates modifying an existing student's GPA.
+This screenshot demonstrates the Cassandra table structure and query outputs after performing CRUD operations.
 
-![Update Query](screenshots/update-query.png)
-
----
-
-### Filter Query
-
-Filtering student records based on major.
-
-![Filter Query](screenshots/filter-query.png)
-
----
-
-### Delete Query
-
-Removing a record from the database and verifying the result.
-
-![Delete Query](screenshots/delete-query.png)
+![Query Results](screenshots/demo2.png)
 
 ---
 
 ## What This Project Demonstrates
 
-- Running **Apache Cassandra in Docker**
-- Creating a **NoSQL database schema**
-- Inserting and managing data using **CQL**
-- Performing **CRUD operations** (Create, Read, Update, Delete)
+- Running **Apache Cassandra inside Docker**
+- Designing a **NoSQL database schema**
+- Executing **CQL queries**
+- Performing **CRUD operations**
 - Connecting Cassandra with **Python**
-- Preparing data for integration with **Langflow AI workflows**
-
----
-
-## Future Improvements
-
-- Add a REST API for querying Cassandra
-- Integrate Cassandra queries into a Langflow chatbot
-- Deploy the database and API using Docker Compose
-- Add automated testing for database queries
+- Preparing data for integration with **AI tools like Langflow**
