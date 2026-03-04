@@ -55,3 +55,31 @@ python query_test.py
 * Python
 * Langflow
 * NoSQL Databases
+
+---
+
+## Project Structure and Example Output
+
+### Project Structure
+
+```
+cassandra-langflow-chatbot
+│
+├── schema.cql
+├── docker_commands.txt
+├── query_test.py
+├── context_file.md
+└── README.md
+```
+
+### Example Output
+
+Running the Python query script returns:
+
+```
+Students in database:
+
+ID: STU00001, Name: Cornelius Mulyokela, Major: Computer Science, GPA: 3.89
+ID: STU00002, Name: Alice Johnson, Major: Data Science, GPA: 3.75
+ID: STU00003, Name: Michael Lee, Major: Cybersecurity, GPA: 3.92
+```
